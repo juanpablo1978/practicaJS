@@ -391,12 +391,153 @@ return texto === (textoReverso = texto.split("").reverse().join(""));
 
 }
 
-console.log(palindro("hfghfjgjfj"));
+//console.log(palindro("hfghfjgjfj"));
 
 /*
 8) Programa una función que elimine cierto patrón de caracteres de un texto dado,
- pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.
+pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.
  */
+
+const texto = "xyz1, xyz2, xyz3, xyz4, y xyz5";
+
+const elimCaracter = ()=>{
+    return texto.substring(3,4)
+}
+
+console.log(elimCaracter());
+
+// Ejercicio 1: Contar hasta 50 de 5 en 5
+// Imprimí en consola los números del 0 al 50 de 5 en 5 usando while.
+
+/*let index = 1;
+let resto = 0;
+let divisor = 5;
+
+while (index <= 50) {
+    if (index % divisor === resto) {
+       // console.log(index);
+    }
+    index++
+}*/
+/*---------------------------------------------------------------------------------------------------------------*/
+// Ejercicio 2: Mostrar letras de una palabra una por una
+// Usá un while para mostrar en consola cada letra de la palabra "programar".
+
+/*
+let texto = "programar";
+let index = 0;
+texto = texto.split("")
+
+while (index < texto.length) {
+
+    console.log(texto[index]);
+    index++
+}
+*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+// Ejercicio 3: Multiplicar cada número del array por 3
+// Dado un array como [1, 4, 5, 6], usá for para imprimir el triple de cada número.
+
+/*const array = [1, 4, 5, 6];
+
+for (let index = 0; index < array.length; index++) {
+    console.log(array[index] * 3);
+}*/
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+// Ejercicio 4: Sumar solo los números pares del 1 al 100
+// Usá un for y un if para sumar solo los pares (2, 4, 6, …) hasta llegar a 100.
+/*
+suma = 0;
+
+for (let index = 0; index <= 100; index++) {
+       suma = suma + index
+       if (suma % 2 === 0) {
+        console.log(suma);
+    }
+}
+*/
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+// Ejercicio 5: Mostrar los números del array hasta encontrar un número mayor a 30
+// Usá un while para mostrar los números de [2, 4, 8, 25, 32, 1, 0] hasta que encuentres uno mayor a 30. Ahí cortás.
+
+/*
+const arregloN = [2, 4, 8, 25, 32, 1, 0];
+index = 0;
+
+while (index < arregloN.length) {
+if (arregloN[index] >= 30) break
+    console.log(arregloN[index]);
+  index++
+}
+*/
+
+/*------------------------------------------------------------------------------------------------------------------*/
+// Ejercicio 6: Contar cuántas vocales tiene una palabra
+// Dado un string como "hola mundo", contá cuántas letras son vocales.
+
+/*
+let saludaremos = "murcielago";
+const vocales = ["a","e","i","o","u"];
+let acc = 0;
+
+for (let index = 0; index < saludaremos.length; index++) {
+
+    for (let i = 0; i < vocales.length; i++) {
+        if (saludaremos[index] === vocales[i]) {
+            acc = acc + 1;
+            
+        }
+    }
+}
+console.log(acc);
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+// Ejercicio 7: Mostrar los nombres que tengan más de 5 letras
+// Dado un array como ["Ana", "Esteban", "Sofía", "Lucas", "Alexander"], mostrá solo los nombres con más de 5 letras.
+/*
+const nombres = ["Ana", "Esteban", "Sofía", "Lucas", "Alexander"];
+
+for (let index = 0; index < nombres.length; index++) {
+    if(nombres[index].length > 5)
+  console.log( nombres[index]);
+}*/
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+// Ejercicio 8: Repetir un mensaje hasta que se escriba "salir"
+// Simulá con un while un input del usuario (por ejemplo, con un array de strings), y repetí un mensaje hasta
+// que el string sea "salir".
+/*
+const arreglString = ["hola", "entrar", "chau", "salir", "bien"];
+
+index = 0;
+
+while (index < arreglString.length) {
+    if (arreglString[index] === "salir") break;
+    console.log(arreglString[index]);
+    
+    index++
+}*/
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+// Ejercicio 9: Mostrar tabla de multiplicar de un número del 1 al 10
+// Dado un número, imprimí su tabla de multiplicar del 1 al 10 (ej: 3x1 = 3, 3x2 = 6, etc.).
+
+/*
+let tabla = 2;
+
+for (let index = 1; index <= 10 ; index++) {
+    console.log(`${tabla} x ${index} = ${index * tabla}`);
+}
+*/
 
 
 
